@@ -1,0 +1,140 @@
+ body {
+      background-color: #f8f9fc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+ul {
+    list-style-type: none !important;
+}
+.list a i{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+
+/* Sidebar */
+    .sidebar {
+      height: 100vh;
+      width: 230px;
+      background-color: #fff;
+      border-right: 1px solid #dee2e6;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      display: flex;
+      align-items: center;
+      color: #3c4858;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 4px 0;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar a:hover, .sidebar a.active {
+      background-color: #e6f0ff;
+      color: #0d6efd;
+    }
+
+    .sidebar a i {
+      margin-right: 10px;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 250px;
+      padding: 40px;
+    }
+
+    .appointment-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: 0.2s;
+    }
+
+    .appointment-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .date {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    /* Notificación flotante */
+    .toast-alert {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #198754;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      z-index: 2000;
+      display: none;
+      font-size: 16px;
+      animation: fadeInOut 4s ease forwards;
+    }
+
+    .toast-error {
+      background-color: #dc3545; /* rojo para error o cancelación */
+    }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translate(-50%, -20px); }
+      10%, 90% { opacity: 1; transform: translate(-50%, 0); }
+      100% { opacity: 0; transform: translate(-50%, -20px); }
+    }
+
+    /* Botón agregar cita */
+    .add-btn {
+      background-color: #0d6efd;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .add-btn:hover {
+      background-color: #0b5ed7;
+      color: #fff;
+    }
+ /* 🌿 Botón de WhatsApp */
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 10px 18px;
+      font-weight: 500;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-btn i {
+      font-size: 18px;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.4);
+      color: #fff;
+    }
