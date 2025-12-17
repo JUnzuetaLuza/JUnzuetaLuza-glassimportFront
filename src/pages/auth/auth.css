@@ -46,7 +46,7 @@
 .login-card {
   position: absolute;
   width: 100%;
-  height: 60%;
+  height: auto;
   border-radius: 20px;
   padding: 25px 35px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
@@ -208,6 +208,27 @@
 
 .register-link:hover {
   text-decoration: underline;
+}
+
+.login-btn {
+  width: auto;
+  padding: 12px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3c4043;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease-in-out;
+}
+
+.login-btn:hover {
+  background:#FFFFFF;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 /* --- BOTÓN GOOGLE ESTILO OFICIAL PERO ELEGANTE --- */
 .google-btn {
