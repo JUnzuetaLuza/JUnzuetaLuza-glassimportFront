@@ -1,12 +1,7 @@
 {
+  "cleanUrls": true,
   "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://inc-marianne-xdddasdasdasd-9921195e.koyeb.app/api/:path*"
-    },
-    {
-      "source": "/oauth2/:path*",
-      "destination": "https://inc-marianne-xdddasdasdasd-9921195e.koyeb.app/oauth2/:path*"
-    }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

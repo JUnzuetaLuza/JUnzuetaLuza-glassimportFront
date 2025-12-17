@@ -10,27 +10,27 @@ export const LoginComponent = ({ handleFlipped }) => {
     window.location.href = `${API_BASE_URL.split('/api')[0]}/oauth2/authorization/google`;
   };
 
-  const handleEmailLogin = (e) => {
-    e.preventDefault();
+  // const handleEmailLogin = (e) => {
+  //   e.preventDefault();
 
-    fetch(`${API_BASE_URL}/auth/login`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.token) {
-          localStorage.setItem("authToken", data.token);
-          window.location.href = "/panel-citas";
-        }})
-      .catch(error => {
-        console.error("Error during login:", error);
-      });
+  //   fetch(`${API_BASE_URL}/auth/login`, {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ email, password }),
+  //   })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       if (data.token) {
+  //         localStorage.setItem("authToken", data.token);
+  //         window.location.href = "/panel-citas";
+  //       }})
+  //     .catch(error => {
+  //       console.error("Error during login:", error);
+  //     });
 
-  }
+  // }
 
   return (
     <div className="login-card card-front">
